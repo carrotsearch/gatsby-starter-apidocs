@@ -42,7 +42,7 @@
     <ul>
       <li>
         <p>
-          In most cases, each APIdocs page will be an article covering one specific
+          In most cases, each APIdocs page will be an article covering a specific
           aspect of your software.
         </p>
       </li>
@@ -74,5 +74,145 @@
         </p>
       </li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Text elements</h2>
+
+    <p>
+      Use typical HTML text elements as you'd normally do in a regular HTML page.
+      Use <code>p</code> to delimit paragraphs, <code>ul</code> and <code>ol</code>
+      for lists, <code>ul</code> for definition lists, <code>strong</code> and <code>em</code> for emphasis.
+    </p>
+
+    <p>
+      Some notes regarding text elements:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          The search index uses paragraphs as the basic indexing unit. Keeping
+          paragraphs short will not only make them easier to read, but also improve
+          the search experience.
+        </p>
+      </li>
+      <li>
+        <p>
+          Do not use <code>strong</code> and <code>em</code> tags outside of
+          paragraphs. Otherwise, their contents will not be indexed by the
+          search engine.
+        </p>
+      </li>
+      <li>
+        <p>
+          For lists with short entries, put the text directly in the <code>li</code>
+          tags. For lists with longer entries, put one or more <code>p</code>
+          paragraphs inside the <code>li</code>. Both variants are handled
+          by the search engine.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="links">
+    <h2>Links</h2>
+
+
+  </section>
+
+  <section id="code-blocks">
+    <h2>Code blocks</h2>
+
+    <p>
+      APIdocs can highlight code blocks in your documentation using Prism.js. To
+      mark a block-level code fragment for highlighting, use the
+      <code>pre</code> tag with the <code>data-language</code> attribute
+      defining the language of the contents. See the <a
+        href="https://prismjs.com/#languages-list">Prism.js list of supported languages</a> for the attribute values to use.
+    </p>
+
+    <section id="code-blocks:simple">
+      <h3>Simple code blocks</h3>
+
+      <p>
+        The following <code>pre</code> code block is marked as one containing JavaScript:
+      </p>
+
+      <pre data-language="markup"><pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre></pre>
+
+      <p>
+        The block will be rendered as:
+      </p>
+
+      <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+    </section>
+
+    <section id="code-blocks:figure">
+      <h3>Figure code blocks</h3>
+
+      <p>
+        To make a code block stand out more, you can enclose it in a
+        <code>figure</code> and provide a <code>figcaption</code>. The search
+        engine will index the caption and tag it as a code example in search
+        results.
+      </p>
+
+      <p>
+        The following figure:
+      </p>
+
+      <pre data-language="markup"><figure id="scheduling">
+  <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+  <figcaption>
+    Scheduling long-running calculations to run in background.
+  </figcaption>
+</figure></pre>
+    </section>
+
+    <p>will be rendered as:</p>
+
+    <figure id="scheduling-long-running-calculations">
+      <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+      <figcaption>
+        Scheduling long-running calculations to run in background.
+      </figcaption>
+    </figure>
+
+    <p>
+      Additionally, if you add an <code>id</code> attribute to your
+      <code>figure</code>, the figure will be available as a special entity in
+      search results. You can test this by typing <em>sched</em> in the search
+      box above.
+    </p>
+
+    <section id="code-blocks:embedding">
+      <h3>Embedding code fragments</h3>
+
+      <p>
+        Use the <code>data-embed</code> attribute of the <code>pre</code> tag
+        to embed a code fragment from an external file:
+      </p>
+
+      <pre data-language="markup"><pre data-embedx="../examples/hello-world.html"> </pre></pre>
+    </section>
+
+    <section id="code-blocks:annotations">
+      <h3>Code annotations</h3>
+
+
+    </section>
   </section>
 </article>
