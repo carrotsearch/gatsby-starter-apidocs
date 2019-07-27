@@ -1,0 +1,78 @@
+<article>
+  <h1>Editing pages</h1>
+
+  <p>
+    Use plain, semantic HTML to write your documentation. APIdocs will take
+    care of ToC generation, code highlighting, image processing and full-text
+    search.
+  </p>
+
+  <section id="page-outline">
+    <h2>Page outline</h2>
+
+    <p>
+      Below is the outline of a typical APIdocs page.
+    </p>
+
+    <figure>
+      <pre data-language="markup"><article>
+  <h1>Page title</h1>
+
+  <p>Introduction.</p>
+
+  <section id="section-1">
+    <h2>Section 1</h2>
+
+    <p>Section 1 content.</p>
+
+    <section id="section-1.1">
+      <h3>Section 1.1</h3>
+    </section>
+  </section>
+</article>
+      </pre>
+
+      <figcaption>The outline of a typical APIdocs HTML page source.</figcaption>
+    </figure>
+
+    <p>
+      Here are some rules about the structure of page HTMLs:
+    </p>
+
+    <ul>
+      <li>
+        <p>
+          In most cases, each APIdocs page will be an article covering one specific
+          aspect of your software.
+        </p>
+      </li>
+      <li>
+        <p>
+          The root element of each page HTML file must be an HTML <code>article</code>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Each <code>article</code> must have a child <code>h1</code> element
+          containing the article's title. APIdocs will use its contents to
+          refer to the page in navigation links.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use HTML <code>section</code> tags to divide your article into sections.
+          Put section titles in HTML heading tags (<code>h2</code>, <code>h3</code> etc.)
+          <em>inside</em> the section tag. Do not use heading tags outside of <code>section</code>s.
+        </p>
+      </li>
+      <li>
+        <p>
+          If you would like a section to appear in the per-article table of contents,
+          add an <code>id</code> attribute to that section. Additionally, sections
+          with <code>id</code> attributes will have their heading submitted to the
+          search index.
+        </p>
+      </li>
+    </ul>
+  </section>
+</article>

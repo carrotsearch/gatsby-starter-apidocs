@@ -6,6 +6,12 @@
         "getting-started",
         "quick-start"
       ]
+    },
+    {
+      "title": "Basic usage",
+      "articles": [
+        "editing-pages"
+      ]
     }
   ]
 }
