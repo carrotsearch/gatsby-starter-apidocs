@@ -118,7 +118,41 @@
   <section id="links">
     <h2>Links</h2>
 
+    <p>
+      Use HTML <code>a</code> tags to link to other pages of your documentation
+      or to external resources.
+    </p>
 
+    <ul>
+      <li>
+        <p>
+          Use relative <code>href</code> attributes to link to other pages
+          of your documentation. APIdocs will rewrite such links to point to the final page URLs.
+        </p>
+
+        <pre data-language="markup"><a hr&#8203;ef="quick-start.html">Quick start</a></pre>
+      </li>
+
+      <li>
+        <p>
+          Use #-style anchors to go to specific parts of the same or other
+          page:
+        </p>
+
+        <pre data-language="markup"><a hr&#8203;ef="#code-blocks">Code blocks</a></pre>
+      </li>
+
+      <li>
+        <p>
+          Use absolute URLs to link to external resources. APIdocs will not
+          modify such URLs.
+        </p>
+
+        <pre data-language="markup"><a hr&#8203;ef="https://carrotsearch.com">
+  Text mining and visualization software
+</a></pre>
+      </li>
+    </ul>
   </section>
 
   <section id="code-blocks">
