@@ -1,0 +1,197 @@
+<article>
+  <h1>Code blocks</h1>
+
+  <p>
+    APIdocs can highlight code blocks in your documentation using Prism.js.
+  </p>
+
+  <p>
+    To mark a block-level code fragment for highlighting, use the
+    <code>pre</code> tag with the <code>data-language</code> attribute
+    defining the language of the contents. See the <a
+      href="https://prismjs.com/#languages-list">Prism.js list of supported languages</a> for the attribute values to use.
+  </p>
+
+  <section id="code-blocks:simple">
+    <h2>Simple code blocks</h2>
+
+    <p>
+      The following <code>pre</code> code block is marked as one containing JavaScript:
+    </p>
+
+    <pre data-language="markup"><pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre></pre>
+
+    <p>
+      The block will be rendered as:
+    </p>
+
+    <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+  </section>
+
+  <section id="code-blocks:figure">
+    <h2>Figure code blocks</h2>
+
+    <p>
+      To make a code block stand out more, you can enclose it in a
+      <code>figure</code> and provide a <code>figcaption</code>. The search
+      engine will index the caption and tag it as a code example in search
+      results.
+    </p>
+
+    <p>
+      The following figure:
+    </p>
+
+    <pre data-language="markup"><figure id="scheduling">
+  <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+  <figcaption>
+    Scheduling long-running calculations to run in background.
+  </figcaption>
+</figure></pre>
+  </section>
+
+  <p>will be rendered as:</p>
+
+  <figure id="scheduling-long-running-calculations">
+      <pre data-language="js">api.schedule(function(done) {
+  performCalculations();
+  done();
+}, "when-idle");</pre>
+    <figcaption>
+      Scheduling long-running calculations to run in background.
+    </figcaption>
+  </figure>
+
+  <p>
+    Additionally, if you add an <code>id</code> attribute to your
+    <code>figure</code>, the figure will be available as a special entity in
+    search results. You can test this by typing <em>sched</em> in the search
+    box above.
+  </p>
+
+  <section id="code-blocks:embedding">
+    <h2>Embedding code fragments</h2>
+
+    <p>
+      Use the <code>data-embed</code> attribute of the <code>pre</code> tag
+      to embed a code fragment from an external file:
+    </p>
+
+    <pre data-language="markup"><pre data-embed="../examples/hello-world.html"></pre></pre>
+
+    <p>
+      The path to the embedded file is resolved relatively to the
+      HTML file it appears in.
+    </p>
+
+    <p>
+      When embedding fragments of real code, it may be useful to hide
+      certain lines. See the <a href="#code-blocks:annotations">code annotations</a>
+      section for special comments you can use to achieve that.
+    </p>
+  </section>
+
+  <section id="code-blocks:annotations">
+    <h2>Code annotations</h2>
+
+    <p>
+      You can use special comments in both in-line and embedded code to highlight
+      and hide individual lines or ranges of lines.
+    </p>
+
+    <p>
+      The following special comments are supported:
+    </p>
+
+    <ul>
+      <li>
+        <p><code>highlight-line</code>: highlights the current line;</p>
+      </li>
+      <li>
+        <p>
+          <code>highlight-next-line</code>: highlights the next line, removes the line containing the comment;
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>highlight-range{4-7}</code>: highlights lines 4&ndash;7, line 1 is the next line; removes the line containing the comment;
+        </p>
+      </li>
+
+      <li>
+        <p>
+          <code>hide-next-line</code>: hides the next line,
+        </p>
+      </li>
+
+      <li>
+        <p><code>hide-range{2-4}</code>: hides lines 2&ndash;4, line 1 is the next line.</p>
+      </li>
+    </ul>
+
+    <p>
+      Use comment syntax specific to the language to place annotation comments.
+      The following code comments:
+    </p>
+
+    <pre data-language="markup"><pre data-language="css">/** highlight&#8203;-range{5-7} */
+p {
+  margin-top: 1rem; /** highlight&#8203;-line */
+}
+
+strong {
+  font-weight: bold;
+}
+
+article {
+  /** highlight&#8203;-next-line */
+  max-width: 40rem;
+}
+
+/** hide&#8203;-next-line */
+.hack { overflow: hidden; }
+/** hide&#8203;-range{1-4} */
+.bug {
+  display: none;
+}
+
+.warning { color: red }</pre></pre>
+
+    <p>
+      produce the following code block:
+    </p>
+
+    <pre data-language="css">/** highlight-range{5-7} */
+p {
+  margin-top: 1rem; /** highlight-line */
+}
+
+strong {
+  font-weight: bold;
+}
+
+article {
+  /** highlight-next-line */
+  max-width: 40rem;
+}
+
+/** hide-next-line */
+.hack { overflow: hidden; }
+/** hide-range{1-4} */
+.bug {
+  display: none;
+}
+
+.warning { color: red }
+      </pre>
+  </section>
+</article>

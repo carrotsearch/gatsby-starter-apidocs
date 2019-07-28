@@ -10,7 +10,8 @@
     {
       "title": "Basic usage",
       "articles": [
-        "editing-pages"
+        "basic-editing",
+        "code-blocks"
       ]
     }
   ]
