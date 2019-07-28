@@ -17,7 +17,7 @@
     "gatsby-source-filesystem": "^2.1.1",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-nprogress": "^2.1.2",
-    "@carrotsearch/gatsby-plugin-apidocs": "^1.0.2",
+    "@carrotsearch/gatsby-plugin-apidocs": "^1.0.4",
     "@carrotsearch/gatsby-transformer-html": "^1.0.2",
     "@carrotsearch/gatsby-plugin-content-search": "^1.0.0",
 
