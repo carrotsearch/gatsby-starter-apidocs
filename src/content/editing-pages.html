@@ -349,4 +349,86 @@ article {
       </pre>
     </section>
   </section>
+
+  <section id="images">
+    <h2>Images</h2>
+
+    <p>
+      Use <code>img</code> tags to embed images in your documentation. APIdocs
+      will turn each such element into a responsive image that scales to take
+      the whole width of the page. We will also generate optimized versions
+      of the image in different resolutions, so that the appropriate version
+      can be served depending on the user's device and viewport size.
+    </p>
+
+    <p>
+      Like with code examples, you can wrap an <code>img</code> tag in a
+      <code>figure</code> and provide a <code>figcaption</code> to have the
+      image described and treated specially in search results.
+    </p>
+
+    <p>
+      The following markup:
+    </p>
+
+    <pre data-language="markup"><figure id="lingo4g-map">
+  <img src="lingo4g-explorer-dark.jpg"
+       alt="Lingo4G document map view." />
+  <figcaption>
+    <p>
+      A 2d map visualization of 3.5k medical paper
+      abstracts related to vaccines produced by
+      Lingo4G and visualized by dotAtlas.
+    </p>
+
+    <p>
+      Textually-similar abstracts are clustered together
+      on the map. The panel on the right shows the top abstracts
+      lying in the map region described as <em>measles
+      vaccine</em>. Phases specific to the selected
+      map region are highlighted in the text of the abstract.
+    </p>
+  </figcaption>
+</figure></pre>
+
+    <p>
+      will render the following figure:
+    </p>
+
+    <figure id="lingo4g-explorer">
+      <img src="lingo4g-explorer-dark.jpg"
+           alt="Lingo4G document map view." />
+      <figcaption>
+        <p>
+          A 2d map visualization of 3.5k medical paper abstracts related to
+          vaccines produced by Lingo4G and visualized by dotAtlas.
+        </p>
+
+        <p>
+          Textually-similar abstracts are clustered together on the map. The
+          panel on the right shows the top abstracts lying in the map region
+          described as <em>measles vaccine</em>. Phases specific to the selected
+          map region are highlighted in the text of the abstract.
+        </p>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="warnings">
+    <h2>Warnings</h2>
+
+    <p>
+      Use a <code>div</code> with class name <code>warning</code> to generate
+      a warning box. A standalone <code>strong</code> tag can serve as the heading of the warning.
+    </p>
+
+    <div class="warning">
+      <strong>Warnings in search results.</strong>
+
+      <p>
+        Warning boxes get a special icon when presented in search results.
+        Type <em>warning</em> in the search box to find out.
+      </p>
+    </div>
+  </section>
 </article>

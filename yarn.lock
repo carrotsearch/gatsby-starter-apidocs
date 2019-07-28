@@ -763,10 +763,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@carrotsearch/gatsby-plugin-apidocs@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.4.tgz#a13793dca0d3280073c838aa9238fa21f87045d8"
-  integrity sha512-WEVpdY94ooiYiNt6HS4aZf/fwTwzyUjytydwtDhts4T4K5gswZ3F/Z8TN2tS2d+C1iIxGgyyLkTXgzFBGdUWjA==
+"@carrotsearch/gatsby-plugin-apidocs@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.5.tgz#c656be3f155e2881c7a994836278c4280f961405"
+  integrity sha512-jh5pS4cbWH1FxHlxCwGIj68odW7je4QM4Sf/R+LaaQArdMy9t1pl+AQwOsF21TdkY9jgAhezj9aY5ZpXN6aAHg==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.19"
     "@fortawesome/free-regular-svg-icons" "^5.9.0"
@@ -787,10 +787,10 @@
     fuzzysort "^1.1.4"
     lodash "^4.17.15"
 
-"@carrotsearch/gatsby-transformer-html@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.2.tgz#d2a610e11ec5eac9a4a55010c26cb9859d3f6fab"
-  integrity sha512-vbqHZybofxeRJE8ik1k5/3rTnIRmuICydlQzfxCJj2HXEaDPUhSOOWaqRljd2D5yMAGFRpAFar0Rp3xjTf/dwA==
+"@carrotsearch/gatsby-transformer-html@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.4.tgz#8b006fe61fad407b672e8720b39663cf0515fdf0"
+  integrity sha512-dRU2s09Ws8nb4/CSalwz2MLmqnnoqfpO5abxFaG1LH/O9UH+ISVZcM4TrxL3vmcFylppCXqbftMgdH96U/ViLA==
   dependencies:
     cheerio "^1.0.0-rc.3"
     gatsby-plugin-sharp "^2.2.9"
