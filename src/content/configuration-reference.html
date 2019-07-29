@@ -1,0 +1,95 @@
+<article>
+  <h1>Configuration reference</h1>
+
+  <p>
+    APIdocs is an opinionated framework built for a specific set of software
+    products in mind. For this reason, the number of options you can configure is
+    currently limited.
+  </p>
+
+  <section id="gatsby-plugin-apidocs">
+    <h2><code>gatsby-plugin-apidocs</code></h2>
+
+    <p>
+      The <code>gatsby-plugin-apidocs</code> plugin exposes the following
+      options:
+    </p>
+
+    <dl>
+      <dt><code id="gatsby-plugin-apidocs:basePath">basePath</code></dt>
+      <dd>
+        <p>
+          The base path to assume when converting HTML content file paths to
+          page identifiers. For example, if your configuration sources HTML
+          files from the <code>src/content</code> directory, set
+          <code>basePath</code> to <code>src/content</code>.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-plugin-apidocs:navigation">navigation</code></dt>
+      <dd>
+        <p>
+          Path to the <a href="editing-navigation.html">navigation</a> JSON file.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-plugin-apidocs:logo">logo</code></dt>
+      <dd>
+        <p>
+          Path to the <a href="customization.html#logo">site logo</a> file.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-plugin-apidocs:footer">footer</code></dt>
+      <dd>
+        <p>
+          Path to the <a href="customization.html#footer">site footer</a> file.
+        </p>
+      </dd>
+    </dl>
+  </section>
+
+  <section id="gatsby-config">
+    <h2>gatsby-config.js</h2>
+
+    <p>
+      Some properties of your site can be configured in the
+      <code>siteMetadata</code> section of <code>gatsby-config.js</code>.
+    </p>
+
+    <dl>
+      <dt><code id="gatsby-config:title">title</code></dt>
+      <dd>
+        <p>
+          The string to use in the <code>head</code> &gt; <code>title</code>
+          tag of the resulting HTML.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-config:description">description</code></dt>
+      <dd>
+        <p>
+          The text to use in the description <code>meta</code> tag. This is
+          the one you want to edit for good SEO results.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-config:lang">lang</code></dt>
+      <dd>
+        <p>
+          The contents of the <code>lang</code> attribute of the <code>html</code>
+          tag.
+        </p>
+      </dd>
+
+      <dt><code id="gatsby-config:indexAlias">indexAlias</code></dt>
+      <dd>
+        <p>
+          Identifier of the page to copy to be served at the root <code>/</code>
+          URL of your site. Use both leading and trailing slash when providing
+          the alias, for example: <code>/getting-started/</code>.
+        </p>
+      </dd>
+    </dl>
+  </section>
+</article>
