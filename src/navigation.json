@@ -10,8 +10,17 @@
     {
       "title": "Basic usage",
       "articles": [
-        "basic-editing",
-        "code-blocks"
+        "editing-navigation",
+        "editing-pages",
+        "code-blocks",
+        "customization"
+      ]
+    },
+    {
+      "title": "Advanced topics",
+      "articles": [
+        "under-the-hood",
+        "configuration-reference"
       ]
     }
   ]

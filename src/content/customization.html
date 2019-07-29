@@ -1,0 +1,73 @@
+<article>
+  <h1>Customization</h1>
+
+  <p>
+    APIdocs was created for documenting our software products at Carrot Search,
+    so its customization options are limited. You can still customize the basic
+    things like site logo, footer and add your own CSS.
+  </p>
+
+  <section id="logo">
+    <h2>Site logo</h2>
+
+    <p>
+      Site logo is by default read from <code>src/logo.html</code>. Contents
+      of this file will be inserted in the site's logo place holder in the
+      upper left corner of the page. The file must contain valid HTML, there
+      can be one or more tags on the first level, you can also use SVG.
+    </p>
+
+    <p>
+      You can style your logo either by inline CSS styles in
+      <code>src/logo.html</code> or by editing <code>src/styles/custom.css</code>.
+    </p>
+
+    <p>
+      In development mode, all changes to the logo HTML will be applied
+      in real time to the site preview.
+    </p>
+  </section>
+
+  <section id="footer">
+    <h2>Site footer</h2>
+
+    <p>
+      Site footer is by default read from <code>src/footer.html</code>. Contents
+      of the file will be appended below the main article. The file must contain
+      valid HTML. Ideally, the footer should be contained in a single <code>footer</code>
+      tag, though multiple root-level elements are allowed too. You can use
+      SVG, if needed.
+    </p>
+
+    <p>
+      You will most likely style place styles for your footer in
+      <code>src/styles/custom.css</code>.
+    </p>
+
+    <p>
+      In development mode, all changes to the footer HTML will be applied
+      in real time to the site preview.
+    </p>
+  </section>
+
+  <section id="custom-css">
+    <h2>Custom CSS</h2>
+
+    <p>
+      You can place extra CSS styles in <code>src/styles/custom.css</code>. You
+      can use that file to style logo and footer as well as tweak the appearance
+      of the whole site.
+    </p>
+
+    <p>
+      The CSS file will be processed by Webpack running inside Gatsby, so
+      you can use all Webpack magic, like importing webfonts directly from
+      npm dependencies.
+    </p>
+
+    <p>
+      In development mode, all changes to the custom CSS will be applied
+      in real time to the site preview.
+    </p>
+  </section>
+</article>

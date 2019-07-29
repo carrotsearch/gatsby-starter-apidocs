@@ -1,0 +1,57 @@
+<article>
+  <h1>Editing navigation</h1>
+
+  <p>
+    When adding new pages to your documentation, you'll need to link them
+    at some place in the navigation menu.
+  </p>
+
+  <p>
+    By default, the left-hand-side navigation of your documentation site
+    is defined in the <code>src/navigation.json</code> file. Currently, only
+    two-level navigation is supported.
+  </p>
+
+  <p>
+    The navigation JSON file groups pages (articles) in your site into chapters:
+  </p>
+
+  <pre data-language="json">{
+  "chapters": [
+    {
+      "title": "Getting started",
+      "articles": [
+        "getting-started",
+        "quick-start"
+      ]
+    },
+    {
+      "title": "Basic usage",
+      "articles": [
+        "editing-navigation",
+        "editing-pages",
+        "code-blocks",
+        "customization"
+      ]
+    },
+    {
+      "title": "Advanced topics",
+      "articles": [
+        "under-the-hood",
+        "configuration-reference"
+      ]
+    }
+  ]
+}</pre>
+
+  <p>
+    The <code>articles</code> array lists identifiers of pages to link to the
+    specific chapter. An identifier of <code>getting-started</code>, for example,
+    will be mapped to <code>content/getting-started.html</code>.
+  </p>
+
+  <p>
+    Please note that a page will not appear in the menu until you create
+    its corresponding HTML file. A warning will be logged to DevTools console.
+  </p>
+</article>
