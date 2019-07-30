@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build --prefix-paths",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve --prefix-paths"
