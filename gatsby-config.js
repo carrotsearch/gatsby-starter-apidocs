@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/gatsby-starter-apidocs/docs",
+  pathPrefix: "/apidocs",
   siteMetadata: {
     title: `APIdocs documentation`,
     description: `APIdocs is an opinionated Gatsby template for writing technical documentation. Clone, customize and start documenting.`,
