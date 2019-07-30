@@ -8,7 +8,8 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve --prefix-paths"
+    "serve": "gatsby serve --prefix-paths",
+    "update-docs": "node update-docs.js"
   },
   "dependencies": {
     "gatsby": "^2.13.40",
@@ -25,5 +26,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.3"
   }
 }
