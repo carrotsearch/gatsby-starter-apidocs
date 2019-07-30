@@ -26,34 +26,34 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-40bb6b299fbcf9cb493e.js"
+    "url": "webpack-runtime-8b59235eba137213573e.js"
   },
   {
-    "url": "styles.82854eebd72a015a04fa.css"
+    "url": "styles.22afe6bc875c943006b7.css"
   },
   {
     "url": "styles-8def39e4520d424c7ed8.js"
   },
   {
-    "url": "app-844e02c47b70ea4ea623.js"
+    "url": "app-59767f553d50867d2747.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-3fbffbca62349e6f2f3b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a212cccc680b70aa1dd251c5ffcdc319"
+    "revision": "db5991c6797adf605d3e0342bd539a0f"
   },
   {
     "url": "4-bf90c16504e7b64e4578.js"
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "db95ef27103900cb1915f3d472d1504c"
+    "revision": "fa8cb954c38494d4c3db9d7797fa148e"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "b10fb864f5c162eca7e22be3c78e9f02"
+    "revision": "782ab7ccc801b501b2fceaa155b837c0"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -75,7 +75,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/gatsby-starter-apidocs/docs/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -147,7 +147,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `${pathname}`
+        return `/gatsby-starter-apidocs/docs${pathname}`
       } else {
         return pathname
       }
