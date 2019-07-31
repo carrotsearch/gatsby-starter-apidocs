@@ -67,9 +67,10 @@ To get your first APIdocs-based site:
 
    ```bash
    yarn run gatsby build
-   The public/ folder will contain the static site to deploy.
    ```
 
+   The public/ folder will contain the static site to deploy.
+   
 ---
 
 For more detailed information, see [APIdocs documentation](https://carrotsearch.github.io/apidocs/). 
