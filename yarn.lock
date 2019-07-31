@@ -787,10 +787,10 @@
     fuzzysort "^1.1.4"
     lodash "^4.17.15"
 
-"@carrotsearch/gatsby-transformer-html@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.6.tgz#d2a015619dd5cbbbc483de9f2a3efe95b0478459"
-  integrity sha512-4OCDkX26swsxibHsB5DqH+dccyP4HUkDg5qRwD4oJp1yQrZI+iYKu9cEa7nTd/eFd3Lv9Sm/4NuqJEfWAb+Yeg==
+"@carrotsearch/gatsby-transformer-html@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.7.tgz#12aa76f3a58eab917800adfe260606943956d30b"
+  integrity sha512-a1P7kAzFfwB4Ecu1Nk6bArlZjbBylfcgrl3iK63ojtQ8zxGcQSmuoI/C/Ans5TsBMCurrQL6l+m3oDJ+8wuGzQ==
   dependencies:
     cheerio "^1.0.0-rc.3"
     gatsby-plugin-sharp "^2.2.9"
