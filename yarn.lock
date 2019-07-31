@@ -763,10 +763,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@carrotsearch/gatsby-plugin-apidocs@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.7.tgz#8b89ba8bf5fbdccfb3be5f79f9c5b91b9883d8a6"
-  integrity sha512-OzXCu6DzSjT9H0zuD8IdgG9mJNCYrjTv0Oyoy9+xh6aIqFZVPfDcZIw1BPZ91E0U5TXeE0H/hOWbU4L0zy111w==
+"@carrotsearch/gatsby-plugin-apidocs@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.8.tgz#a19a909cd42b676d69a43c45139e0173a93c7f11"
+  integrity sha512-eoI2K67+UosFO3nNf6aPEKRkprwvdRX6e0fqRFyE+g+ur37GBi74nhzGhQp9PPmy1NtULVsVGFRz6euh5xZl+g==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.19"
     "@fortawesome/free-regular-svg-icons" "^5.9.0"
