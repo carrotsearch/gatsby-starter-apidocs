@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/apidocs",
+  pathPrefix: '__RELATIVIZE_PREFIX__',
   siteMetadata: {
     title: `APIdocs documentation`,
     description: `APIdocs is an opinionated Gatsby template for writing technical documentation. Clone, customize and start documenting.`,
@@ -35,6 +35,7 @@ module.exports = {
     `@carrotsearch/gatsby-transformer-html`,
     '@carrotsearch/gatsby-plugin-content-search',
     `gatsby-plugin-offline`,
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
+    `@carrotsearch/gatsby-plugin-relativize`
   ]
 };
