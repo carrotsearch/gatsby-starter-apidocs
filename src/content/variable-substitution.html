@@ -1,0 +1,82 @@
+<article>
+  <h1>Variable substitution</h1>
+
+  <p>
+    APIdocs lets you define variables to be substituted with values provided at
+    documentation build time. You can use them to insert timestamps, version
+    numbers and any other dynamic values known at build-time.
+  </p>
+
+  <section id="defining-variables">
+    <h2>Defining variables</h2>
+
+    <p>
+      Substitution variables are defined in the <code>gatsby-config.js</code>
+      file of your documentation project. The list of variables is part
+      of the <code>@carrotsearch/gatsby-transformer-html</code> plugin
+      options.
+    </p>
+
+    <figure id="defining-variables:gatsby-config.js">
+      <pre data-language="js">module.exports = {
+  siteMetadata: {
+    ...
+  },
+  plugins: [
+    ...
+    {
+      resolve: `@carrotsearch/gatsby-transformer-html`,
+      options: {
+        variables: {
+          "APIDOCS_STARTER_VERSION": package.version,
+          "BUILD_TYPE": "public"
+        }
+      }
+    }
+  ]
+}</pre>
+
+      <figcaption>
+        Defining substitution variables in <code>gatsby-config.js</code>.
+        This configuration defines two variables: <code>APIDOCS_STARTER_VERSION</code> and <code>BUILD_TYPE</code>.
+      </figcaption>
+    </figure>
+
+    <p>
+      Names of your variables can only contain alphanumeric and underscore characters.
+    </p>
+
+    <p>
+      Since <code>gatsby-config.js</code> is a regular piece of JavaScript code,
+      you can compute variable values based on any resources available
+      to Node.JS, such as environment variables or the contents of
+      the file system.
+    </p>
+  </section>
+
+  <section id="using-variables">
+    <h2>Using variables</h2>
+
+    <p>
+      Once you have defined your substitution values, you can reference
+      them in the source HTML files surrounded with the <code>%</code> sign:
+    </p>
+
+    <figure id="using-variables:example">
+      <pre data-language="markup"><p>
+  Version of this documentation: %&#8203;APIDOCS_STARTER_VERSION%<br/>
+  Build type: %&#8203;BUILD_TYPE%
+</p></pre>
+    </figure>
+
+    <div class="warning">
+      <strong>Make sure variable values are sanitized!</strong>
+
+      <p>
+        APIdocs will insert the literal values of your variables into the output,
+        HTML tags will not be escaped. Therefore, make sure the values you provide
+        are properly sanitized and don't break the HTML structure of the whole page.
+      </p>
+    </div>
+  </section>
+</article>
