@@ -843,10 +843,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@carrotsearch/gatsby-plugin-apidocs@1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.15.tgz#e6f4b6c9ac68c34c00cf1997b9e18433d5cbb161"
-  integrity sha512-nlPlhHbqa9oyvqcAOMAvzdOfTaQIWiekp3kxqxl8MTuDYTT+f8tg2KhnsXylwftBM8Psz9loCILEvT4ZyeQ0SA==
+"@carrotsearch/gatsby-plugin-apidocs@1.0.21":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-apidocs/-/gatsby-plugin-apidocs-1.0.21.tgz#2fe2ae95b31ea81a4596663b9db04baabb72b921"
+  integrity sha512-BOKvuJsp+mD3QfO73V8DjCA+E2St1AxXjMyBBKHGlWaMe0mNe3hvqXiIzjfrKpPA8koBe9TsmV11yXQHGTybEw==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.19"
     "@fortawesome/free-regular-svg-icons" "^5.9.0"
@@ -867,19 +867,19 @@
     fuzzysort "^1.1.4"
     lodash "^4.17.15"
 
-"@carrotsearch/gatsby-plugin-relativize@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-relativize/-/gatsby-plugin-relativize-1.0.1.tgz#69d804a2cf94f8d2d7034cfe1720fff01681fe40"
-  integrity sha512-5umhn8Ws+LS0tHluqKU/7olL7egOqO0cA7Z75lbjYEDOZLdLVhdbWKxMEPzgiL6obwSqw3NZ3geGiSCXe9kOgg==
+"@carrotsearch/gatsby-plugin-relativize@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-plugin-relativize/-/gatsby-plugin-relativize-1.0.3.tgz#3af3b8b0de890bd5511704d54bd744dbfcbca33c"
+  integrity sha512-gWufBtW4YleOB+iwqLIDeNH1W8rebNP7Fs+epmKvagUaXFCnQwowxv7zydMSxlDmNuFy8VfAmq46nmCb50Vikw==
   dependencies:
     globby "^10.0.1"
     is-text-path "^2.0.0"
     p-map "^3.0.0"
 
-"@carrotsearch/gatsby-transformer-html@1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.19.tgz#55ce76046b4a904df1f28f282c89dc5d5d60a0bf"
-  integrity sha512-K9c1qEmCIZPgpbNeSwNeD+9UTZBstXX73TXUoyCD5JuYkYaefnqItK222P5A1DDBFPqZ7jH81A+Tl9r/Dgi1jQ==
+"@carrotsearch/gatsby-transformer-html@1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@carrotsearch/gatsby-transformer-html/-/gatsby-transformer-html-1.0.22.tgz#d0e78cf9a2e5787f90a9326dc0b4f90be0c0c93e"
+  integrity sha512-7l6iFG6fi+H5dGTOqswrO6tKwiJR1Di71bl0OHM365sS1iKu1e056iH5kYZ48u93tiKvXFyMlHZZGDAEHLrU/g==
   dependencies:
     cheerio "^1.0.0-rc.3"
     gatsby-plugin-sharp "^2.2.9"

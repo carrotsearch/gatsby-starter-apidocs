@@ -18,10 +18,10 @@
     "gatsby-source-filesystem": "2.1.53",
     "gatsby-plugin-offline": "2.2.10",
     "gatsby-plugin-nprogress": "2.1.20",
-    "@carrotsearch/gatsby-plugin-apidocs": "1.0.15",
-    "@carrotsearch/gatsby-transformer-html": "1.0.19",
+    "@carrotsearch/gatsby-plugin-apidocs": "1.0.21",
+    "@carrotsearch/gatsby-transformer-html": "1.0.22",
     "@carrotsearch/gatsby-plugin-content-search": "1.0.0",
-    "@carrotsearch/gatsby-plugin-relativize": "1.0.1",
+    "@carrotsearch/gatsby-plugin-relativize": "1.0.3",
 
     "react": "16.13.0",
     "react-dom": "16.13.0",
