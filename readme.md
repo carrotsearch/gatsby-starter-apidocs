@@ -1,6 +1,6 @@
 # APIDocs starter
 
-APIdocs is an opinionated Gatsby template for writing technical documentation. Clone, customize and start documenting.
+APIdocs is an opinionated Gatsby theme for writing technical documentation. Clone, customize and start documenting.
 
 [Complete documentation](https://carrotsearch.github.io/apidocs/)
 

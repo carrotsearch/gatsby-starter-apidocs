@@ -3,25 +3,13 @@
     {
       "title": "Getting started",
       "articles": [
-        "getting-started",
-        "quick-start"
+        "hello"
       ]
     },
     {
       "title": "Basic usage",
       "articles": [
-        "editing-navigation",
-        "editing-pages",
-        "code-blocks",
-        "variable-substitution",
-        "customization"
-      ]
-    },
-    {
-      "title": "Advanced topics",
-      "articles": [
-        "under-the-hood",
-        "configuration-reference"
+        "cookbook"
       ]
     }
   ]

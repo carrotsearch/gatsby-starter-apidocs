@@ -1,42 +1,25 @@
+const projectPackage = require("./package.json");
+
 module.exports = {
-  pathPrefix: '__RELATIVIZE_PREFIX__',
   siteMetadata: {
-    title: `APIdocs documentation`,
+    title: `APIdocs starter project`,
     description: `APIdocs is an opinionated Gatsby template for writing technical documentation. Clone, customize and start documenting.`,
     lang: `en`,
-    indexAlias: `/getting-started/`
+    indexAlias: `/hello/`
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: `@carrotsearch/gatsby-plugin-apidocs`,
+      resolve: `@carrotsearch/gatsby-theme-apidocs`,
       options: {
         navigation: `${__dirname}/src/navigation.json`,
-        logo:   `${__dirname}/src/logo.html`,
+        logo: `${__dirname}/src/logo.html`,
         footer: `${__dirname}/src/footer.html`,
-        basePath: "src/content"
+        basePath: "src/content",
+        variables: {
+          "APIDOCS_STARTER_VERSION": projectPackage.version,
+          "BUILD_TYPE": "public"
+        }
       }
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `#ffaa00`,
-        showSpinner: false
-      }
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-dark-mode`,
-    `@carrotsearch/gatsby-transformer-html`,
-    '@carrotsearch/gatsby-plugin-content-search',
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-catch-links`,
-    `@carrotsearch/gatsby-plugin-relativize`
+    }
   ]
-};
+}

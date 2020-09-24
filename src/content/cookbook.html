@@ -1,0 +1,99 @@
+<article>
+  <h1>Cookbook</h1>
+
+  <p>
+    Here are some page element examples to copy from.
+  </p>
+
+  <p>
+    See <a href="https://carrotsearch.github.io/apidocs/editing-pages/" target=_blank>APIdocs documentation</a>
+    for a detailed list of recommendations for the structure of the HTML.
+  </p>
+
+  <section id="page-outline">
+    <h2>Page outline</h2>
+
+    <p>
+      Below is the outline of a typical APIdocs page.
+    </p>
+
+    <figure id="source-page-outline">
+      <pre data-language="markup">
+        <article>
+          <h1>Page title</h1>
+
+          <p>Introduction.</p>
+
+          <section id="section-1">
+            <h2>Section 1</h2>
+
+            <p>Section 1 content.</p>
+
+            <section id="section-1.1">
+              <h3>Section 1.1</h3>
+            </section>
+          </section>
+        </article>
+      </pre>
+    </figure>
+  </section>
+
+  <section id="image">
+    <h2>Image</h2>
+
+    <pre data-language="markup">
+      <figure id="lingo4g-map" data-indexing="disabled">
+        <img src="lingo4g-explorer-dark.jpg"
+             alt="Lingo4G document map." />
+        <figcaption>
+          <p>
+            A 2d map visualization of 3.5k medical paper
+            abstracts related to vaccines produced by
+            Lingo4G and visualized by dotAtlas.
+          </p>
+        </figcaption>
+      </figure>
+    </pre>
+  </section>
+
+  <section id="warning">
+    <h2>Warning</h2>
+
+    <pre data-language="markup">
+      <div class="warning">
+        <strong>Heads up!</strong>
+
+        <p>
+          This is a warning.
+        </p>
+      </div>
+    </pre>
+  </section>
+
+  <section id="code-block">
+    <h2>Code block</h2>
+
+    <pre data-language="js">
+      api.schedule(function(done) {
+        performCalculations();
+        done();
+      }, "when-idle");
+    </pre>
+
+    <p>
+      See <a href="https://carrotsearch.github.io/apidocs/code-blocks/" target=_blank>code blocks documentation</a>
+      for the available options, such as line highlighting and embedding external files.
+    </p>
+  </section>
+
+  <section id="variable-substitution">
+    <h2>Variable substitution</h2>
+
+    <pre data-language="markup">
+      <p>
+        Version of this documentation: %&#8203;APIDOCS_STARTER_VERSION%<br/>
+        Build type: %&#8203;BUILD_TYPE%
+      </p>
+    </pre>
+  </section>
+</article>

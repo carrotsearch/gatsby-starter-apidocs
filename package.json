@@ -1,33 +1,18 @@
 {
   "name": "gatsby-starter-apidocs",
   "private": true,
-  "description": "Starter project for the Gatsby APIdocs system. Clone, customize and start documenting.",
-  "version": "1.0.0",
+  "description": "Starter project for the Gatsby APIdocs theme. Clone, customize and start documenting.",
+  "version": "1.1.0",
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "start": "npm run develop",
     "serve": "gatsby serve --prefix-paths"
   },
   "dependencies": {
-    "gatsby": "2.17.17",
-    "gatsby-plugin-catch-links": "2.1.27",
-    "gatsby-plugin-dark-mode": "1.1.1",
-    "gatsby-plugin-react-helmet": "3.1.23",
-    "gatsby-source-filesystem": "2.1.53",
-    "gatsby-plugin-offline": "2.2.10",
-    "gatsby-plugin-nprogress": "2.1.20",
-    "@carrotsearch/gatsby-plugin-apidocs": "1.0.21",
-    "@carrotsearch/gatsby-transformer-html": "1.0.22",
-    "@carrotsearch/gatsby-plugin-content-search": "1.0.0",
-    "@carrotsearch/gatsby-plugin-relativize": "1.0.3",
-
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
-    "react-helmet": "5.2.1"
-  },
-  "devDependencies": {
-    "shelljs": "^0.8.3"
+    "gatsby": "2.24.63",
+    "@carrotsearch/gatsby-theme-apidocs": "0.1.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
