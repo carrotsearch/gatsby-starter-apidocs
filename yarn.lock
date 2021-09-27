@@ -1777,9 +1777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carrotsearch/gatsby-theme-apidocs@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@carrotsearch/gatsby-theme-apidocs@npm:3.0.1"
+"@carrotsearch/gatsby-theme-apidocs@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@carrotsearch/gatsby-theme-apidocs@npm:3.0.2"
   dependencies:
     "@carrotsearch/gatsby-plugin-content-search": "*"
     "@carrotsearch/gatsby-plugin-relativize": "*"
@@ -1808,7 +1808,7 @@ __metadata:
     gatsby: "*"
     react: "*"
     react-dom: "*"
-  checksum: 41ebf1a6131ace20b532940176de2a6a4518ca015f0c0ceeff1f40fa34b2c89255668060fc8fd2334761a12718e583cf694855558a6dd827ab0b6b4d84c305e2
+  checksum: 3229725d423d407d49b30a8c336a232fa5bfa803479ae6c74340c49892801426c162696983142679c1121a6b6bac9b6dab39301dde189b2fd5f11b663b961eeb
   languageName: node
   linkType: hard
 
@@ -8045,7 +8045,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "gatsby-starter-apidocs@workspace:."
   dependencies:
-    "@carrotsearch/gatsby-theme-apidocs": 3.0.1
+    "@carrotsearch/gatsby-theme-apidocs": 3.0.2
     gatsby: 3.14.0
     react: 17.0.2
     react-dom: 17.0.2
