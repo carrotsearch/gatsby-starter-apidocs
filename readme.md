@@ -31,8 +31,6 @@ To get your first APIdocs-based site:
 
 1. **Install dependencies.**
 
-   Make sure you have Node.JS version 1. **or later and yarn installed. Then fetch APIdocs dependencies:**
-   
    ```bash
    cd gatsby-starter-apidocs
    yarn install
