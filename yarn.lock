@@ -1777,9 +1777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carrotsearch/gatsby-theme-apidocs@npm:3.0.0":
-  version: 3.0.0
-  resolution: "@carrotsearch/gatsby-theme-apidocs@npm:3.0.0"
+"@carrotsearch/gatsby-theme-apidocs@npm:3.0.1":
+  version: 3.0.1
+  resolution: "@carrotsearch/gatsby-theme-apidocs@npm:3.0.1"
   dependencies:
     "@carrotsearch/gatsby-plugin-content-search": "*"
     "@carrotsearch/gatsby-plugin-relativize": "*"
@@ -1788,6 +1788,7 @@ __metadata:
     "@fortawesome/free-regular-svg-icons": 5.15.4
     "@fortawesome/free-solid-svg-icons": 5.15.4
     "@fortawesome/react-fontawesome": 0.1.15
+    "@gatsbyjs/reach-router": 1.3.6
     chokidar: 3.5.2
     gatsby-link: 3.14.0
     gatsby-plugin-catch-links: 3.14.0
@@ -1807,7 +1808,7 @@ __metadata:
     gatsby: "*"
     react: "*"
     react-dom: "*"
-  checksum: 4b56cc8f78ce6decb820671dbe95c25b3b22b9519097b71e9499840377504807e9c8089f8a89500cf455eaa844aeeb7e23e500efcb85cda102859908646d270c
+  checksum: 41ebf1a6131ace20b532940176de2a6a4518ca015f0c0ceeff1f40fa34b2c89255668060fc8fd2334761a12718e583cf694855558a6dd827ab0b6b4d84c305e2
   languageName: node
   linkType: hard
 
@@ -1909,7 +1910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gatsbyjs/reach-router@npm:^1.3.6":
+"@gatsbyjs/reach-router@npm:1.3.6, @gatsbyjs/reach-router@npm:^1.3.6":
   version: 1.3.6
   resolution: "@gatsbyjs/reach-router@npm:1.3.6"
   dependencies:
@@ -8044,7 +8045,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "gatsby-starter-apidocs@workspace:."
   dependencies:
-    "@carrotsearch/gatsby-theme-apidocs": 3.0.0
+    "@carrotsearch/gatsby-theme-apidocs": 3.0.1
     gatsby: 3.14.0
     react: 17.0.2
     react-dom: 17.0.2
