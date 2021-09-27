@@ -1,4 +1,10 @@
-/node_modules/
 /.idea/
-/.cache/
-/public/
+/.yarn/*
+!/.yarn/patches
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+!/.yarn/versions
+node_modules/
+public/
+.cache/
